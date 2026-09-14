@@ -1,0 +1,13 @@
+predict_dataset:
+  shuffle: false
+  batch_size: 1
+  num_workers: 0
+  datapath:
+    input_dataset_dir: /home/waas/project/starter_code/dataset_test_noisy
+    use_prob: false
+    loader: npy
+    data_name: noisy.npy
+    ignore_check: true
+    data_path:
+      shapenet:
+        - [stage3/datalist/test.txt, 1.0]

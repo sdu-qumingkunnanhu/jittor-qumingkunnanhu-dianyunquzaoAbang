@@ -1,0 +1,12 @@
+mode: predict
+seed: 2025
+
+load_ckpt: stage3/experiments/stage3_checkpoint_joint_200.pkl
+save_dir: stage3/result
+pred_filename: denoised.npy
+overwrite: true
+
+components:
+  data: stage3/configs/data/predict
+  transform: stage3/configs/transform/ops
+  model: stage3/configs/model/core
